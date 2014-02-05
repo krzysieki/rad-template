@@ -7,4 +7,15 @@
 #= require_tree ./controllers
 #= require_tree ./directives
 
-ControlPanel = angular.module('ControlPanel', ['ui.bootstrap'])
+ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute'])
+
+ControlPanel.config(['$routeProvider', ($routeProvider) ->
+  $routeProvider.when('/dashboard', {templateUrl: '../templates/mainDashboard.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/ads', {templateUrl: '../templates/mainAds.html', controller: 'AdsCtrl' } )
+  $routeProvider.when('/playlists', {templateUrl: '../templates/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
+  $routeProvider.when('/devices', {templateUrl: '../templates/mainDevices.html', controller: 'DevicesCtrl' } )
+  $routeProvider.when('/help', {templateUrl: '../templates/mainHelp.html', controller: 'HelpCtrl' } )
+
+  $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'})
+
+])

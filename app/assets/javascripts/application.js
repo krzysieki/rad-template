@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require underscore/underscore
 //= require angular/angular
+//= require angular/angular-route
 //= require ui-bootstrap-tpls-0.9.0.min
 //= require bootstrap
