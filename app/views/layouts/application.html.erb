@@ -17,14 +17,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><%= I18n.t('company') %></a>
+
     </div>
     <div class="navbar-collapse collapse">
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Help</a></li>
+        <li><a href="#/dashboard"> Dashboard</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Settings<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li ng-controller="userCtrl"><a href="">{{ currentUser.user.email }}</a></li>
+            <li><a href="#/account"> Account</a></li>
+            <li class="divider"></li>
+            <li><a href="users/sign_out"> Logout</a></li>
+          </ul>
+        </li>
+        <li><a href="#/help"> Help</a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <input type="text" class="form-control" placeholder="Search...">
@@ -36,25 +44,32 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
+      <a class="brand" href="#"><img src="assets/images/DigitalAd_Logo_FC_noback.png"></a>
+      <strong>Dashboard</strong>
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">Overview</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
+        <li class="active"><a href="#/dashboard"><i class="icon-dashboard"></i> Dashboard</a></li>
+        <li><a href="#"><i class="icon-envelope"></i> Notifications</a></li>
+        <li><a href="#/invoices"><i class="icon-inbox"></i> Invoices</a></li>
+        <li><a href="#"><i class="icon-tasks"></i> Reports</a></li>
       </ul>
+      <strong>Ads</strong>
       <ul class="nav nav-sidebar">
-        <li><a href="">Nav item</a></li>
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-        <li><a href="">More navigation</a></li>
+        <li><a href="#/ads"><i class="icon-eye-open"></i> Advertisements</a></li>
+        <li><a href=""><i class="icon-book"></i> Media Library</a></li>
+        <li><a href=""><i class="icon-paper-clip"></i> Templates</a></li>
       </ul>
+      <strong>Playlists</strong>
       <ul class="nav nav-sidebar">
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
+        <li><a href="#/playlists"><i class="icon-list-alt"></i> Playlists</a></li>
+        <li><a href=""><i class="icon-columns"></i> Playlist Editor</a></li>
+      </ul>
+      <strong>Devices</strong>
+      <ul class="nav nav-sidebar">
+        <li><a href=""><i class="icon-hdd"></i> Devices</a></li>
+        <li><a href=""><i class="icon-time"></i> Time Schedule</a></li>
       </ul>
     </div>
+    <!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view> -->
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>
       <%= yield %>
     </div>

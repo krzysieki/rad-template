@@ -3,4 +3,7 @@ ControlPanel::Application.routes.draw do
   root to: 'main#index'
 
   resources :users
+  resources :customers
+  resources :devices
+  resources :playlists
 end

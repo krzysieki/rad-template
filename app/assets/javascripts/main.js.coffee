@@ -7,14 +7,15 @@
 #= require_tree ./controllers
 #= require_tree ./directives
 
-ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute'])
+ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate'])
 
 ControlPanel.config(['$routeProvider', ($routeProvider) ->
-  $routeProvider.when('/dashboard', {templateUrl: '../templates/mainDashboard.html', controller: 'DashboardCtrl' } )
-  $routeProvider.when('/ads', {templateUrl: '../templates/mainAds.html', controller: 'AdsCtrl' } )
-  $routeProvider.when('/playlists', {templateUrl: '../templates/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
-  $routeProvider.when('/devices', {templateUrl: '../templates/mainDevices.html', controller: 'DevicesCtrl' } )
-  $routeProvider.when('/help', {templateUrl: '../templates/mainHelp.html', controller: 'HelpCtrl' } )
+  $routeProvider.when('/dashboard', {templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/ads', {templateUrl: '../assets/mainAds.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/playlists', {templateUrl: '../assets/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
+  $routeProvider.when('/devices', {templateUrl: '../assets/mainDevices.html', controller: 'DevicesCtrl' } )
+  $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DeviceCtrl' } )
+  $routeProvider.when('/help', {templateUrl: '../assets/mainHelp.html', controller: 'DashboardCtrl' } )
 
   $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'})
 
