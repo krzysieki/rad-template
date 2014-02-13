@@ -5,11 +5,11 @@
   <form>
     <fieldset>
       <label><strong>Playlist name:</strong></label>
-      <input class="span12" ng-model="formData.newPlaylistName" placeholder="Default playlist" type="text" maxlength="250">
+      <input class="span12" ng-model="formData.newPlaylistName" placeholder="Default playlist" type="text" maxlength="250" autofocus="autofocus">
     </fieldset>
   </form>
 </div>
 <div class="modal-footer">
-  <button class="btn btn-primary" ng-click="ok()">OK</button>
-  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  <input type="submit" class="btn btn-primary" ng-click="ok()"></input>
+  <input type="reset" class="btn btn-warning" ng-click="cancel()"></input>
 </div>

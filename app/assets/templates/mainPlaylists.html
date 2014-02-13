@@ -21,7 +21,7 @@
         <tbody>
 
         <tr ng-repeat="playlist in playlists.playlists | filter:search" class="my-repeat-animation">
-          <td><img src=''></td>
+          <td><img src='{{ playlist.img }}'></td>
           <td>Name: {{ playlist.name }}<br>Duration: {{ playlist.duration }}</td>
           <td>specs here</td>
           <td>
