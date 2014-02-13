@@ -17,6 +17,10 @@ ControlPanel.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DeviceCtrl' } )
   $routeProvider.when('/help', {templateUrl: '../assets/mainHelp.html', controller: 'DashboardCtrl' } )
 
-  $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'})
+  $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'} )
 
+])
+
+ControlPanel.config(["$httpProvider", (provider) ->
+  provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
 ])
