@@ -10,13 +10,22 @@
 ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate'])
 
 ControlPanel.config(['$routeProvider', ($routeProvider) ->
+  # MAIN pages
   $routeProvider.when('/dashboard', {templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/invoices', {templateUrl: '../assets/mainInvoices.html', controller: 'InvoiceCtrl' } )
   $routeProvider.when('/ads', {templateUrl: '../assets/mainAds.html', controller: 'DashboardCtrl' } )
   $routeProvider.when('/playlists', {templateUrl: '../assets/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
   $routeProvider.when('/devices', {templateUrl: '../assets/mainDevices.html', controller: 'DevicesCtrl' } )
   $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DeviceCtrl' } )
   $routeProvider.when('/help', {templateUrl: '../assets/mainHelp.html', controller: 'DashboardCtrl' } )
 
+  # ADMIN part
+  $routeProvider.when('/adminDashboard', {templateUrl: '../assets/adminDashboard.html' } )
+  $routeProvider.when('/adminUsers', {templateUrl: '../assets/adminUsers.html' } )
+  $routeProvider.when('/adminDevices', {templateUrl: '../assets/adminDevices.html' } )
+  $routeProvider.when('/adminPlaylists', {templateUrl: '../assets/adminPlaylists.html' } )
+
+  # DEFAULT page
   $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'} )
 
 ])

@@ -1,4 +1,4 @@
-angular.module('ControlPanel').factory('invoiceServ', ['$http', ($http) ->
+angular.module('ControlPanel').factory('invoiceService', ['$http', ($http) ->
 
   invoices =
       invoices: [

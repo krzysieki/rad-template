@@ -1,5 +1,4 @@
-@InvoiceCtrl = ($scope, invoiceServ) ->
+@InvoiceCtrl = ($scope, invoiceService) ->
   $scope.title = "Invoice part"
-  $scope.invoices = invoiceServ
+  $scope.invoices = invoiceService
   $scope.error = "error"
-  # invoices.loadInvoices()
