@@ -26,8 +26,19 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Settings<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li ng-controller="userCtrl"><a href="">{{ currentUser.user.email }}</a></li>
+            <li><a href="">{{ currentUser.user.email }}</a></li>
             <li><a href="#/account"> Account</a></li>
+            <li class="divider"></li>
+            <li><a href="users/sign_out"> Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Admin<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/adminDashboard">Dashboard</a></li>
+            <li><a href="#/adminUsers"> Users</a></li>
+            <li><a href="#/adminPlaylists"> Playlists</a></li>
+            <li><a href="#/adminDevices"> Devices</a></li>
             <li class="divider"></li>
             <li><a href="users/sign_out"> Logout</a></li>
           </ul>
@@ -61,12 +72,12 @@
       <strong>Playlists</strong>
       <ul class="nav nav-sidebar">
         <li><a href="#/playlists"><i class="icon-list-alt"></i> Playlists</a></li>
-        <li><a href=""><i class="icon-columns"></i> Playlist Editor</a></li>
+        <li><a href="#/playlists/1"><i class="icon-columns"></i> Playlist Editor</a></li>
       </ul>
       <strong>Devices</strong>
       <ul class="nav nav-sidebar">
-        <li><a href=""><i class="icon-hdd"></i> Devices</a></li>
-        <li><a href=""><i class="icon-time"></i> Time Schedule</a></li>
+        <li><a href="#/devices"><i class="icon-hdd"></i> Devices</a></li>
+        <li><a href="#/devices/1"><i class="icon-time"></i> Time Schedule</a></li>
       </ul>
     </div>
     <!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view> -->

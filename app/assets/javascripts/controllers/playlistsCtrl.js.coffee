@@ -1,6 +1,10 @@
-@PlaylistsCtrl = ($scope, playlistsServ, $modal) ->
-  playlistsServ.loadPlaylists()
-  $scope.playlists = playlistsServ.data
+@PlaylistsCtrl = ($scope, $routeParams, playlistService, $modal, $q) ->
+  $scope.data =
+    playlists: playlistService.data
+    currentPlaylist:
+      name: 'test'
+
+  $scope.data.playlistId = $routeParams.playlistId
 
   $scope.open = ->
     modalInstance = $modal.open(
@@ -21,9 +25,18 @@
     )
 
   $scope.destroyPlaylist = (playlistId) ->
-    playlistsServ.deletePlaylist(playlistId)
-    playlistsServ.data.playlists = null
-    playlistsServ.isLoaded = false
-    playlistsServ.loadPlaylists()
+    playlistService.deletePlaylist(playlistId)
+    playlistService.data.playlists = null
+    playlistService.isLoaded = false
+    playlistService.loadPlaylists()
 
-  return
+  $scope.prepPlaylists = ->
+    playlist = _.findWhere(playlistService.data.playlists, {id: parseInt($scope.data.playlistId)})
+    $scope.data.currentPlaylist = playlist
+    console.log('promise completed')
+    console.log(playlistService.data.playlists)
+
+  @deferred = $q.defer()
+  @deferred.promise.then($scope.prepPlaylists)
+
+  playlistService.loadPlaylists(@deferred)

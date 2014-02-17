@@ -1,1 +1,17 @@
 <h1 class="page-header">ADMIN :: Users</h1>
+{{ users }}
+<table>
+  <thead>
+  <tr>
+    <th>Email</th>
+    <th>Linked to customer</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="user in users">
+    <td>
+      {{ user.email }}
+    </td>
+  </tr>
+  </tbody>
+</table>

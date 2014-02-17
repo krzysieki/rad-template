@@ -1,5 +1,3 @@
-@DashboardCtrl = ($scope, currentUser) ->
+@DashboardCtrl = ($scope, usersService) ->
   $scope.title = "Digital Ad Control Panel"
-  $scope.currentUser = currentUser.data
-
-  currentUser.loadUser()
+  $scope.currentUser = usersService.data.currentUser
