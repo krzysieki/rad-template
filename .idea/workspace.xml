@@ -64,28 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mainPlaylists.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mainPlaylists.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/templates/mainPlaylists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="13" selection-start="1553" selection-end="1553" vertical-scroll-proportion="-30.1875" vertical-offset="0" max-vertical-offset="1518">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editPlaylist.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/templates/editPlaylist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.75" vertical-offset="0" max-vertical-offset="621">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playlistsCtrl.js.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/playlistsCtrl.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="893" selection-end="893" vertical-scroll-proportion="0.5652174" vertical-offset="322" max-vertical-offset="943">
+            <state line="11" column="12" selection-start="307" selection-end="307" vertical-scroll-proportion="0.4922179" vertical-offset="0" max-vertical-offset="1518">
               <folding />
             </state>
           </provider>
@@ -414,7 +396,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1976" y="296" width="1545" height="905" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -734,20 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/editPlaylist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.75" vertical-offset="0" max-vertical-offset="621">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainPlaylists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1553" selection-end="1553" vertical-scroll-proportion="-30.1875" vertical-offset="0" max-vertical-offset="1518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/ModalInstanceCtrl.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.3703041" vertical-offset="0" max-vertical-offset="559">
@@ -764,7 +732,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/playlistsCtrl.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="893" selection-end="893" vertical-scroll-proportion="0.5652174" vertical-offset="322" max-vertical-offset="943">
+        <state line="17" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.13043478" vertical-offset="322" max-vertical-offset="943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/editPlaylist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="297" selection-end="297" vertical-scroll-proportion="0.3491461" vertical-offset="0" max-vertical-offset="621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainPlaylists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="307" selection-end="307" vertical-scroll-proportion="0.4922179" vertical-offset="0" max-vertical-offset="1518">
           <folding />
         </state>
       </provider>
