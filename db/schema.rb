@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140213102243) do
+ActiveRecord::Schema.define(version: 20140218110633) do
 
   create_table "customers", force: true do |t|
     t.string   "firstName"
@@ -27,6 +27,11 @@ ActiveRecord::Schema.define(version: 20140213102243) do
   create_table "customers_and_playlists", force: true do |t|
     t.integer "customer_id"
     t.integer "playlist_id"
+  end
+
+  create_table "customers_devices", force: true do |t|
+    t.integer "customer_id"
+    t.integer "device_id"
   end
 
   create_table "customers_playlists", force: true do |t|

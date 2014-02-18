@@ -12,8 +12,8 @@ class CustomersController < ApplicationController
   def show
     customer = Customer.find(params[:id])
 
-    respond_with(customers) do |format|
-      format.json { render :json => customer.as_json }
+    respond_with(customer) do |format|
+      format.json { render :json => customer.as_json(:include => [:users, :devices,:playlists]) }
     end
   end
 end

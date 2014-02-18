@@ -5,7 +5,7 @@ class PlaylistsController < ApplicationController
     playlists = current_user.customers.first.playlists
 
     respond_with(playlists) do |format|
-      format.json { render :json => playlists.as_json }
+      format.json { render :json => playlists.as_json(:include => :customers) }
     end
   end
 

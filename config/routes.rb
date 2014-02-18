@@ -6,4 +6,5 @@ ControlPanel::Application.routes.draw do
   resources :customers
   resources :devices
   resources :playlists
+  get '/currentuser', to: 'users#currentuser'
 end

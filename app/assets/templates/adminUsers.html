@@ -1,10 +1,10 @@
 <h1 class="page-header">ADMIN :: Users</h1>
-{{ users }}
-<table>
+<table class="table table-striped table-bordered table-hover">
   <thead>
   <tr>
     <th>Email</th>
     <th>Linked to customer</th>
+    <th>Control</th>
   </tr>
   </thead>
   <tbody>
@@ -12,6 +12,8 @@
     <td>
       {{ user.email }}
     </td>
+    <td><p ng-repeat="customer in user.customers">{{ customer.firstName }} {{ customer.lastName }}</p></td>
+    <td><a href="">Edit</a> | <a href="">DeActivate</a></td>
   </tr>
   </tbody>
 </table>

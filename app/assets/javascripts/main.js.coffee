@@ -17,7 +17,7 @@ ControlPanel.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/playlists', {templateUrl: '../assets/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
   $routeProvider.when('/playlists/:playlistId', {templateUrl: '../assets/editPlaylist.html', controller: 'PlaylistsCtrl' } )
   $routeProvider.when('/devices', {templateUrl: '../assets/mainDevices.html', controller: 'DevicesCtrl' } )
-  $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DeviceCtrl' } )
+  $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DevicesCtrl' } )
   $routeProvider.when('/help', {templateUrl: '../assets/mainHelp.html', controller: 'DashboardCtrl' } )
 
   # ADMIN part

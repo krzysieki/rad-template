@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore/underscore
-//= require angular/angular
-//= require angular/angular-file-upload.min
+//= require angular-file-upload/angular-file-upload-shim.min
+//= require angular/angular.min
+//= require angular-file-upload/angular-file-upload.min
 //= require angular/angular-route
 //= require angular/angular-animate
 //= require ui-bootstrap-tpls-0.9.0.min
