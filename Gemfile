@@ -21,6 +21,4 @@ gem 'devise'
 gem 'carrierwave'
 gem 'capistrano', '2.14.2'
 
-group :production do
   gem 'mysql2'
-end
