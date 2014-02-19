@@ -101,6 +101,12 @@ angularFileUpload.service('$upload', ['$http', '$rootScope', '$timeout', functio
 			}
 		} else {
 			formData.append(fileFormName, config.file, config.file.name);
+			// formData.append(fileFormName, config.file, config.file.name);
+			// Custom part:
+			// var blob = new Blob([config.file], { type: "image/jpeg"});
+            // var blob = new FormData()
+            // blob.append("dbfile",)
+			// formData.append("fileupload", JSON.stringify(config.file));
 		}
 		
 		config.data = formData;

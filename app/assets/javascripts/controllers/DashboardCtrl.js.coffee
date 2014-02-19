@@ -1,6 +1,7 @@
-@DashboardCtrl = ($scope, usersService, $q, $upload) ->
+@DashboardCtrl = ($scope, usersService, $q, $upload, $filter) ->
   $scope.title = "Digital Ad Control Panel"
   $scope.currentUser = usersService.data.currentUser
+  $scope.bars = []
 
   $scope.prepCurrentUser = ->
     $scope.currentUser = usersService.data.currentUser
@@ -11,41 +12,31 @@
   usersService.loadCurrentUser(@deferred)
 
   $scope.onFileSelect = ($files) ->
-
-    #$files: an array of files selected, each file has name, size, and type.
     i = 0
 
     while i < $files.length
       file = $files[i]
-      #upload.php script, node.js route, or servlet url
-      # method: POST or PUT,
-      # headers: {'headerKey': 'headerValue'},
-      # withCredentials: true,
-
-      # file: $files, //upload multiple files, this feature only works in HTML5 FromData browsers
-      # set file formData name for 'Content-Desposition' header. Default: 'file'
-
-      #fileFormDataName: myFile, //OR for HTML5 multiple upload only a list: ['name1', 'name2', ...]
-      # customize how data is added to formData. See #40#issuecomment-28612000 for example
-
-      #formDataAppender: function(formData, key, val){} //#40#issuecomment-28612000
+      busy = false
+      while busy
+      myBar = {}
+      myBar.name=file.name
+      myBar.value = 0
+      $scope.bars.push(myBar)
       $scope.upload = $upload.upload(
-        url: "ads/upload"
-        data:
-          myObj: $scope.myModelObj
-
-        file: file
+        # headers: {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'},
+        # withCredentials: true,
+        url: "fileuploads",
+        file: file,
+        fileFormDataName: 'dbfile'
+        busy=true
       ).progress((evt) ->
-        console.log "percent: " + parseInt(100.0 * evt.loaded / evt.total)
+        # myBar2 = $filter('filter')($scope.bars, {name:file.name}, true)
+        console.log file.name + " returned "
+        myBar.value = parseInt(100.0 * evt.loaded / evt.total)
+        # myBar.value = parseInt(100.0 * evt.loaded / evt.total)
         return
       ).success((data, status, headers, config) ->
-
-        # file is uploaded successfully
-        console.log data
         return
       )
       i++
     return
-
-  #.error(...)
-  #.then(success, error, progress);

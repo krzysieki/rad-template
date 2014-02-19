@@ -1,4 +1,6 @@
 ControlPanel::Application.routes.draw do
+  resources :fileuploads
+
   devise_for :users
   root to: 'main#index'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218110633) do
+ActiveRecord::Schema.define(version: 20140219115934) do
 
   create_table "customers", force: true do |t|
     t.string   "firstName"
@@ -62,6 +62,13 @@ ActiveRecord::Schema.define(version: 20140218110633) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "fileuploads", force: true do |t|
+    t.string   "dbfile"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "customer_id"
   end
 
   create_table "playlists", force: true do |t|
