@@ -12,7 +12,7 @@
         <tr>
           <th class="col-md-1">#</th>
           <th>Info</th>
-          <th>Last updated at</th>
+          <th>Specs</th>
           <th>Devices</th>
           <th>
           </th>
@@ -23,7 +23,7 @@
         <tr ng-repeat="playlist in data.playlists | filter:search" class="my-repeat-animation">
           <td><img src='{{ playlist.img }}'></td>
           <td>Name: {{ playlist.name }}<br>Duration: {{ playlist.duration }}</td>
-          <td>{{ playlist.updated_at }}</td>
+          <td>specs here</td>
           <td>
             <ol>
               <li ng-repeat="device in playlist.devices">{{ device.serial }}</li>

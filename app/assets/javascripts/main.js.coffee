@@ -7,7 +7,7 @@
 #= require_tree ./controllers
 #= require_tree ./directives
 
-ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate'])
+ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'angularFileUpload'])
 
 ControlPanel.config(['$routeProvider', ($routeProvider) ->
   # MAIN pages

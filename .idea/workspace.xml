@@ -64,37 +64,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="DashboardCtrl.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/DashboardCtrl.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="73" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+            <state line="29" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="515" max-vertical-offset="1288">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminUsers.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/templates/adminUsers.html">
+      <file leaf-file-name="main.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="8" selection-start="496" selection-end="496" vertical-scroll-proportion="-12.9375" vertical-offset="0" max-vertical-offset="552">
+            <state line="11" column="58" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="989">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainDevices.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDevices.html">
+      <file leaf-file-name="mainDashboard.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="54" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-19.59375" vertical-offset="523" max-vertical-offset="1771">
+            <state line="13" column="56" selection-start="857" selection-end="857" vertical-scroll-proportion="0.4107143" vertical-offset="0" max-vertical-offset="728">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="mainPlaylists.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/templates/mainPlaylists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="31" selection-start="748" selection-end="748" vertical-scroll-proportion="0.34296367" vertical-offset="0" max-vertical-offset="1073">
+            <state line="42" column="13" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-15.28125" vertical-offset="477" max-vertical-offset="1518">
               <folding />
             </state>
           </provider>
@@ -144,31 +144,31 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/playlistService.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/playlistsCtrl.js.coffee" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/DashboardCtrl.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/usersCtrl.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/templates/mainInvoices.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/usersService.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/templates/mainDashboard.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/devicesCtrl.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/deviceService.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/main.js.coffee" />
         <option value="$PROJECT_DIR$/db/migrate/20140218110633_create_customers_devices.rb" />
         <option value="$PROJECT_DIR$/app/controllers/devices_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/templates/mainPlaylists.html" />
         <option value="$PROJECT_DIR$/app/controllers/playlists_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/customers_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/templates/adminUsers.html" />
         <option value="$PROJECT_DIR$/app/assets/templates/mainDevices.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/main.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/DashboardCtrl.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/templates/mainPlaylists.html" />
+        <option value="$PROJECT_DIR$/app/assets/templates/mainDashboard.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="-4" />
-    <option name="width" value="1865" />
-    <option name="height" value="1205" />
+    <option name="x" value="1976" />
+    <option name="y" value="296" />
+    <option name="width" value="1545" />
+    <option name="height" value="905" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -414,7 +414,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-4" width="1865" height="1205" extended-state="6" />
+    <frame x="1976" y="296" width="1545" height="905" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -486,6 +486,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140205112807_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104" />
@@ -504,11 +511,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/butterfly.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="0" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.7040936" vertical-offset="1422" max-vertical-offset="3036" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/plastique/angular-file-upload.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="19" selection-end="19" vertical-scroll-proportion="0.03820598" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/angular/angular-file-upload.min.js">
@@ -621,170 +623,130 @@
         <state line="15" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="-4.3125" vertical-offset="207" max-vertical-offset="2231" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="163" selection-end="163" vertical-scroll-proportion="0.122994654" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/mainInvoices.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="386" selection-end="386" vertical-scroll-proportion="0.30748662" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="10" column="23" selection-start="386" selection-end="386" vertical-scroll-proportion="0.30748662" vertical-offset="0" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/usersCtrl.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
+        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/usersService.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="358" selection-end="358" vertical-scroll-proportion="0.2653846" vertical-offset="0" max-vertical-offset="897">
+        <state line="9" column="42" selection-start="358" selection-end="358" vertical-scroll-proportion="0.2653846" vertical-offset="0" max-vertical-offset="897" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/playlistsCtrl.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.2923077" vertical-offset="163" max-vertical-offset="943" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/playlistService.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="0.1474359" vertical-offset="391" max-vertical-offset="1357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/deviceService.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="622" selection-end="622" vertical-scroll-proportion="0.5826667" vertical-offset="0" max-vertical-offset="750" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/devicesCtrl.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="26" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5602564" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="0.17692308" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="300" selection-end="300" vertical-scroll-proportion="0.1474359" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140218110633_create_customers_devices.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="174" selection-end="174" vertical-scroll-proportion="0.08574092" vertical-offset="0" max-vertical-offset="1073" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140213102243_create_customers_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="107" selection-end="160" vertical-scroll-proportion="0.064305685" vertical-offset="0" max-vertical-offset="1073" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/devices_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="43" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/playlist.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.08574092" vertical-offset="0" max-vertical-offset="1073" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/playlists_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="67" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1058" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="253" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="94" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="73" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/adminUsers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="496" selection-end="496" vertical-scroll-proportion="-12.9375" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDevices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="54" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.6023055" vertical-offset="523" max-vertical-offset="1771" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="43" selection-start="792" selection-end="792" vertical-scroll-proportion="0.50582147" vertical-offset="0" max-vertical-offset="773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="58" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="989">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/DashboardCtrl.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="231" selection-end="347" vertical-scroll-proportion="0.20641026" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/playlistsCtrl.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.2923077" vertical-offset="163" max-vertical-offset="943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/playlistService.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="0.1474359" vertical-offset="391" max-vertical-offset="1357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/deviceService.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="622" selection-end="622" vertical-scroll-proportion="0.5826667" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/devicesCtrl.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5602564" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="106" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.2923077" vertical-offset="209" max-vertical-offset="989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="0.17692308" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="300" selection-end="300" vertical-scroll-proportion="0.1474359" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140218110633_create_customers_devices.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="174" selection-end="174" vertical-scroll-proportion="0.08574092" vertical-offset="0" max-vertical-offset="1073">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140213102243_create_customers_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="107" selection-end="160" vertical-scroll-proportion="0.064305685" vertical-offset="0" max-vertical-offset="1073">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/devices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="29" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="515" max-vertical-offset="1288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/mainPlaylists.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="-2.15625" vertical-offset="0" max-vertical-offset="1518">
+        <state line="42" column="13" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-15.28125" vertical-offset="477" max-vertical-offset="1518">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/playlist.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.08574092" vertical-offset="0" max-vertical-offset="1073">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/playlists_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="67" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="253">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="94" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="73" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/adminUsers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="496" selection-end="496" vertical-scroll-proportion="-12.9375" vertical-offset="0" max-vertical-offset="552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/mainDevices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="54" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-19.59375" vertical-offset="523" max-vertical-offset="1771">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="748" selection-end="748" vertical-scroll-proportion="0.34296367" vertical-offset="0" max-vertical-offset="1073">
+        <state line="13" column="56" selection-start="857" selection-end="857" vertical-scroll-proportion="0.4107143" vertical-offset="0" max-vertical-offset="728">
           <folding />
         </state>
       </provider>

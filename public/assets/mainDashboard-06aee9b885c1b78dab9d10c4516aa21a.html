@@ -3,12 +3,12 @@
 <h2 class="sub-header">News</h2>
 
 <h2 class="sub-header">Notifications</h2>
-<style>.optional-css-class{margin: 10px;padding: 10px;background-color: #dddddd; height: 250px;width:250px;border: 5px dashed #0000ff; font-size: 250%;text-align: center;}</style>
+
 <input type="text" ng-model="myModelObj">
 <input type="file" ng-file-select="onFileSelect($files)" >
 <input type="file" ng-file-select="onFileSelect($files)" multiple>
-<div class="optional-css-class" ng-file-drop="onFileSelect($files)" ng-file-drag-over-class="optional-css-class"
-     ng-show="dropSupported">Drop files here.</div>
+<div ng-file-drop="onFileSelect($files)" ng-file-drag-over-class="optional-css-class"
+     ng-show="dropSupported">drop files here</div>
 <div ng-file-drop-available="dropSupported=true"
      ng-show="!dropSupported">HTML5 Drop File is not supported!</div>
 <button ng-click="upload.abort()">Cancel Upload</button>
