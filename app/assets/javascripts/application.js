@@ -20,3 +20,5 @@
 //= require angular/angular-animate
 //= require ui-bootstrap-tpls-0.9.0.min
 //= require bootstrap
+//= require main
+

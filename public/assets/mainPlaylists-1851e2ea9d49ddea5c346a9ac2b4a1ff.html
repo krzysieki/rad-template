@@ -1,0 +1,58 @@
+<h1>Playlists</h1>
+<div class="filterbar pull-right">
+  <form class="form-inline">
+    <div class="form-group">
+      <label class="sr-only" for="search">Filter by </label>
+      <input type="text" class="form-control input-sm" placeholder="Filter by" ng-model="search.name"
+             id="search"
+             class="form-control">
+    </div>
+  </form>
+</div>
+<div class="content">
+  <h2>Active playlists
+  </h2>
+
+  <div>
+    <table class="table table-hover table-striped table-bordered">
+      <thead>
+      <tr>
+        <th class="col-md-1">#</th>
+        <th>Info</th>
+        <th>Last updated at</th>
+        <th>Devices</th>
+        <th>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr ng-repeat="playlist in data.playlists | filter:search" class="my-repeat-animation">
+        <td><img src='{{ playlist.img }}'></td>
+        <td>Name: {{ playlist.name }}<br>Duration: {{ playlist.duration }}</td>
+        <td>{{ playlist.updated_at }}</td>
+        <td>
+          <ol>
+            <li ng-repeat="device in playlist.devices">{{ device.serial }}</li>
+          </ol>
+        </td>
+        <td class="text-right">
+          <div class="btn-group">
+            <button class="btn btn-primary" popover="Edit" popover-trigger="mouseenter"
+                    ng-click="editPlaylist(playlist.id)">
+              <span class="glyphicon glyphicon-edit"></span>
+            </button>
+            <button class="btn btn-primary" popover="Duplicate" popover-trigger="mouseenter">
+              <span class="glyphicon glyphicon-repeat"></span>
+            </button>
+            <button class="btn btn-danger" popover="Delete" popover-trigger="mouseenter"
+                    ng-click="destroyPlaylist(playlist.id)">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

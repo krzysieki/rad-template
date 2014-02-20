@@ -1,0 +1,60 @@
+<h1>Devices</h1>
+<div class="filterbar pull-right">
+  <form class="form-inline">
+    <div class="form-group">
+      <label class="sr-only" for="filtersearch">Filter by </label>
+      <input type="text" class="form-control input-sm" placeholder="Filter by" ng-model="search.serial" id="filtersearch"
+             class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="filtersearch">Order by </label>
+      <input type="text" class="form-control input-sm"
+             placeholder="Order by"
+             ng-model="search.serial"
+             id="filtersearch"
+             class="form-control">
+    </div>
+  </form>
+</div>
+<div class="content">
+  <h2>Connected devices</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead>
+      <tr>
+        <th>Serial</th>
+        <th>IP</th>
+        <th>Status</th>
+        <th>Control</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="device in data.devices | filter:search" class="my-repeat-animation">
+        <td>{{ device.serial }}</td>
+        <td>0.0.0.0</td>
+        <td>Online</td>
+        <td class="text-right">
+          <div class="btn-group">
+            <button class="btn btn-primary" popover="Edit" popover-trigger="mouseenter"
+                    ng-click="editPlaylist(playlist.id)"><span class="glyphicon glyphicon-edit"></span></button>
+            <button class="btn btn-primary" popover="Auto Brightness: enabled" popover-trigger="mouseenter"
+                    ng-click=""><span class="glyphicon glyphicon-adjust"></span></button>
+            <button class="btn btn-primary" popover="Time table" popover-trigger="mouseenter"
+                    ng-click=""><span class="glyphicon glyphicon-time"></span></button>
+            <button class="btn btn-primary" popover="Logs" popover-trigger="mouseenter"
+                    ng-click=""><span class="glyphicon glyphicon-book"></span></button>
+
+            <button class="btn btn-primary" popover="Refresh" popover-trigger="mouseenter"
+                    ng-click="editPlaylist(playlist.id)"><span class="glyphicon glyphicon-refresh"></span></button>
+            <button class="btn btn-primary" popover="Power-Off" popover-trigger="mouseenter"
+                    ng-click="editPlaylist(playlist.id)"><span class="glyphicon glyphicon-off"></span></button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Virtual devices</h2>
+  <p class="lead text-center">Virtual devices is still being worked on and will be available in <strong>April 2014</strong>.</p>
+</div>

@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 35px;
   background-image: url('images/gangster-may-new-tutorial-tv-scan-lines-added-135842.jpg');
   font-family: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   color: #696969;
@@ -9,17 +9,12 @@ body {
   background-color: #fafafa;
 }
 
-.navbar{
-
-}
-
 p{
   font-size: 85%;
 }
 
 h1{
-  // border-bottom: 1px dashed #ccc;
-  padding: 5px 15px 6px;
+  padding: 20px 15px 6px;
   margin: 15px 0px 0px;
 }
 
@@ -58,10 +53,13 @@ h2{
 
 .nav-left{
   padding: 0;
-  margin: 0 -1px 0;
-border-right: 1px solid #cfcfcf;
+  margin: 0 0 0;
+  border-right: 1px solid #cfcfcf;
 }
 
+.sidebar{
+  margin-top: 15px;
+}
 .content{
   background-color: #FFFFFF;
   margin: 0;
