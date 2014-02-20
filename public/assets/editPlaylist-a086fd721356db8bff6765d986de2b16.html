@@ -1,0 +1,22 @@
+<h1>Playlist Editor - {{ data.currentPlaylist.name }} <button class="btn btn-primary" ng-click="">Change name</button></h1>
+<hr>
+<div class="row">
+  <div class="col-md-7">
+    <h2>Preview window</h2>
+    <img src="http://placehold.it/640x480">
+  </div>
+  <div class="col-md-5">
+    <h2>Layers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Timeline</h2>
+    <ul>
+      <li ng-repeat="ad in playlist.ads">
+        <img src="http://placehold.it/160x160">
+        <img src="http://placehold.it/60x60">
+      </li>
+    </ul>
+  </div>
+</div>

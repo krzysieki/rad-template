@@ -10,9 +10,10 @@
 /tmp
 # Ignore user uploads in staging
 /public/uploads
-# Ignore local precompiled assets
-/public/assets
 # Ignore ide project files
 /.idea
 # We don't want our db settings on the internet
 /config/database.yml
+# Testfiles
+/test
+
