@@ -13,14 +13,14 @@ ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAni
 
 ControlPanel.config(['$routeProvider', ($routeProvider) ->
   # MAIN pages
-  $routeProvider.when('/dashboard', {templateUrl: '<%= asset_path("mainDashboard.html") %>', controller: 'DashboardCtrl' } )
-  $routeProvider.when('/invoices', {templateUrl: '../assets/mainInvoices.html', controller: 'InvoiceCtrl' } )
-  $routeProvider.when('/ads', {templateUrl: '../assets/mainAds.html', controller: 'DashboardCtrl' } )
-  $routeProvider.when('/playlists', {templateUrl: '../assets/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
-  $routeProvider.when('/playlists/:playlistId', {templateUrl: '../assets/editPlaylist.html', controller: 'PlaylistsCtrl' } )
-  $routeProvider.when('/devices', {templateUrl: '../assets/mainDevices.html', controller: 'DevicesCtrl' } )
-  $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/mainDevice.html', controller: 'DevicesCtrl' } )
-  $routeProvider.when('/help', {templateUrl: '../assets/mainHelp.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/dashboard', {templateUrl: '../assets/templates/mainDashboard.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/invoices', {templateUrl: '../assets/templates/mainInvoices.html', controller: 'InvoiceCtrl' } )
+  $routeProvider.when('/ads', {templateUrl: '../assets/templates/mainAds.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/playlists', {templateUrl: '../assets/templates/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
+  $routeProvider.when('/playlists/:playlistId', {templateUrl: '../assets/templates/editPlaylist.html', controller: 'PlaylistsCtrl' } )
+  $routeProvider.when('/devices', {templateUrl: '../assets/templates/mainDevices.html', controller: 'DevicesCtrl' } )
+  $routeProvider.when('/devices/:deviceserial', { templateUrl: '../assets/templates/mainDevice.html', controller: 'DevicesCtrl' } )
+  $routeProvider.when('/help', {templateUrl: '../assets/templates/mainHelp.html', controller: 'DashboardCtrl' } )
 
   # ADMIN part
   $routeProvider.when('/adminDashboard', {templateUrl: '../assets/adminDashboard.html' } )
