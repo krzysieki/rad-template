@@ -9,9 +9,9 @@ set :branch, "master"
 set :user, "deployman"
 set :scm_passphrase, "ah64b32b2"
 set :group, "deployers"
-set :use_sudo, false
+set :use_sudo, true
 set :rails_env, "production"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :ssh_options, { :forward_agent => true }
 set :keep_releases, 5
 default_run_options[:pty] = true
