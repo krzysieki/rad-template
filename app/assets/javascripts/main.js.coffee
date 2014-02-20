@@ -6,8 +6,6 @@
 #= require_tree ./filters
 #= require_tree ./controllers
 #= require_tree ./directives
-#= depend_on_asset "mainDashboard.html"
-#= depend_on_asset "mainPlaylists.html"
 
 ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'angularFileUpload'])
 
@@ -30,7 +28,7 @@ ControlPanel.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/adminInvoices', {templateUrl: '../assets/adminInvoices.html' } )
 
   # DEFAULT page
-  $routeProvider.otherwise({ templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl'} )
+  $routeProvider.otherwise({ templateUrl: '../assets/templates/mainDashboard.html', controller: 'DashboardCtrl'} )
 
 ])
 
