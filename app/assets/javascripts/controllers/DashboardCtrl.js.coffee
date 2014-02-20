@@ -17,7 +17,6 @@
     while i < $files.length
       file = $files[i]
       busy = false
-      while busy
       myBar = {}
       myBar.name=file.name
       myBar.value = 0
@@ -28,7 +27,6 @@
         url: "fileuploads",
         file: file,
         fileFormDataName: 'dbfile'
-        busy=true
       ).progress((evt) ->
         # myBar2 = $filter('filter')($scope.bars, {name:file.name}, true)
         console.log file.name + " returned "
