@@ -44,7 +44,13 @@ namespace :deploy do
   task :custom_precompile do
     run_locally <<-CMD
       rake assets:clean &&
-      rake assets:precompile &&
+      rake assets:precompile
+    CMD
+  end
+
+  desc "GIT"
+  task :custom_git do
+    run_locally <<-CMD
       git add . &&
       git commit -m 'Capistrano autodeploy' &&
       git push origin master
@@ -53,6 +59,7 @@ namespace :deploy do
 
 end
 before "deploy", "deploy:custom_precompile"
+before "deploy", "deploy:custom_git"
 after "deploy", "deploy:symlink_config_files"
 after "deploy", "deploy:restart"
 after "deploy", "deploy:cleanup"
