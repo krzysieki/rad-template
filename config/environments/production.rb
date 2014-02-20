@@ -61,6 +61,12 @@ ControlPanel::Application.configure do
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
    config.assets.precompile += %w( main.js )
+   config.assets.precompile += %w( DashboardCtrl.js )
+   config.assets.precompile += %w( devicesCtrl.js )
+   config.assets.precompile += %w( usersCtrl.js )
+   config.assets.precompile += %w( InvoiceCtrl.js )
+   config.assets.precompile += %w( adsCtrl.js )
+   config.assets.precompile += %w( playlistsCtrl.js )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

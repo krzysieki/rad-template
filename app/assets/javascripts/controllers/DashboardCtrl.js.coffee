@@ -40,3 +40,5 @@
       )
       i++
     return
+
+@DashboardCtrl.$inject = ['$scope', 'usersService', '$q', '$upload', '$filter']
