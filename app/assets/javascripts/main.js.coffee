@@ -8,13 +8,12 @@
 #= require_tree ./directives
 #= depend_on_asset "mainDashboard.html"
 #= depend_on_asset "mainPlaylists.html"
-#= require_tree ../templates
 
 ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'angularFileUpload'])
 
 ControlPanel.config(['$routeProvider', ($routeProvider) ->
   # MAIN pages
-  $routeProvider.when('/dashboard', {templateUrl: '../assets/mainDashboard.html', controller: 'DashboardCtrl' } )
+  $routeProvider.when('/dashboard', {templateUrl: '<%= asset_path("mainDashboard.html") %>', controller: 'DashboardCtrl' } )
   $routeProvider.when('/invoices', {templateUrl: '../assets/mainInvoices.html', controller: 'InvoiceCtrl' } )
   $routeProvider.when('/ads', {templateUrl: '../assets/mainAds.html', controller: 'DashboardCtrl' } )
   $routeProvider.when('/playlists', {templateUrl: '../assets/mainPlaylists.html', controller: 'PlaylistsCtrl' } )
