@@ -12,7 +12,6 @@
 <div class="content">
   <h2>Active playlists
   </h2>
-
   <div>
     <table class="table table-hover table-striped table-bordered">
       <thead>
@@ -39,15 +38,13 @@
         <td class="text-right">
           <div class="btn-group">
             <button class="btn btn-primary" popover="Edit" popover-trigger="mouseenter"
-                    ng-click="editPlaylist(playlist.id)">
-              <span class="glyphicon glyphicon-edit"></span>
+                    ng-click="editPlaylist(playlist.id)"><i class="icon-edit"></i>
             </button>
-            <button class="btn btn-primary" popover="Duplicate" popover-trigger="mouseenter">
-              <span class="glyphicon glyphicon-repeat"></span>
+            <button class="btn btn-primary" popover="Duplicate" popover-trigger="mouseenter"><i
+                    class="icon-repeat"></i>
             </button>
             <button class="btn btn-danger" popover="Delete" popover-trigger="mouseenter"
-                    ng-click="destroyPlaylist(playlist.id)">
-              <span class="glyphicon glyphicon-trash"></span>
+                    ng-click="destroyPlaylist(playlist.id)"><i class="icon-trash"></i>
             </button>
           </div>
         </td>

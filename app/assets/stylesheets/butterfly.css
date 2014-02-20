@@ -1,111 +1,98 @@
 body {
   padding-top: 50px;
-}
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-h1{
+  background-image: url('images/gangster-may-new-tutorial-tv-scan-lines-added-135842.jpg');
   font-family: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 300;
-  font-size: 30px;
-  background-color: #FAFAFA;
   color: #696969;
 }
 
+.container, .navbar{
+  background-color: #fafafa;
+}
+
+.navbar{
+
+}
+
+p{
+  font-size: 85%;
+}
+
+h1{
+  // border-bottom: 1px dashed #ccc;
+  padding: 5px 15px 6px;
+  margin: 15px 0px 0px;
+}
+
 h2{
-  font-family: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  background-color: #FAFAFA;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 5px 5px 20px;
 }
 
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
-.sidebar {
-  display: none;
+.filterbar{
+  padding: 5px 10px 5px;
+  margin: 0 0 0;
+  border-top: 1px dashed #cfcfcf;
 }
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1000;
-    display: block;
-    padding: 70px 20px 20px;
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
+.nav-pills > li > a{
+  color: #696969;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  border-left: 4px solid #afafaf;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
 }
 
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-left: -20px;
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-}
-.nav-sidebar > li > a {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.nav-sidebar > .active > a {
-  color: #fff;
-  background-color: #428bca;
+.nav-pills > li.active > a{
+  background-color: #FFF;
+  color: #696969;
+  border-left: 3px solid #000066;
 }
 
-
-/*
- * Main content
- */
-
-.main {
-  padding: 20px;
-}
-@media (min-width: 768px) {
-  .main {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
+.nav-pills > li > a:hover{
+  background-color: #FFF;
+  border-left: 4px solid #000066;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  border-radius: 50%;
-}
-
-/*
- * Digital Ad Logo
- */
-.brand img{
-
-  width: 100%;
+.nav-left{
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 -1px 0;
+border-right: 1px solid #cfcfcf;
 }
 
+.content{
+  background-color: #FFFFFF;
+  margin: 0;
+  border-top: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+  border: 1px solid #cfcfcf;
+  min-height:600px;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+.nomargin{
+  margin: 0;
+}
+
+.footer{
+  text-align: center;
+  border-top: 1px solid #aeaeae;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.main{
+  padding: 0;
+  margin: 0;
+}
+/*
+ * List Animations
+ */
 
 .my-repeat-animation.ng-enter,
 .my-repeat-animation.ng-leave,
