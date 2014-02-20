@@ -39,8 +39,20 @@ namespace :deploy do
   task :restart do
     run "#{ try_sudo } touch #{ File.join(current_path, 'tmp', 'restart.txt') }"
   end
-end
 
+  desc "Precompile assets"
+  task :custom_precompile do
+    run_locally <<-CMD
+      rake assets:clean &&
+      rake assets:precompile &&
+      git add . &&
+      git commit -m 'Capistrano autodeploy' &&
+      git push origin master
+    CMD
+  end
+
+end
+before "deploy", "deploy:custom_precompile"
 after "deploy", "deploy:symlink_config_files"
 after "deploy", "deploy:restart"
 after "deploy", "deploy:cleanup"

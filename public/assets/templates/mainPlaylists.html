@@ -14,7 +14,7 @@
   </h2>
 
   <div>
-    <table class="table table-hover table-striped table-bordered">
+    <table class="table table-hover table-striped">
       <thead>
       <tr>
         <th class="col-md-1">#</th>
@@ -28,7 +28,7 @@
       <tbody>
 
       <tr ng-repeat="playlist in data.playlists | filter:search" class="my-repeat-animation">
-        <td><img src='{{ playlist.img }}'></td>
+        <td><img src="http://placehold.it/150x100"></td>
         <td>Name: {{ playlist.name }}<br>Duration: {{ playlist.duration }}</td>
         <td>{{ playlist.updated_at }}</td>
         <td>
