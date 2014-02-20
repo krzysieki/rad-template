@@ -67,6 +67,7 @@ ControlPanel::Application.configure do
    config.assets.precompile += %w( InvoiceCtrl.js )
    config.assets.precompile += %w( adsCtrl.js )
    config.assets.precompile += %w( playlistsCtrl.js )
+   config.assets.precompile += %w( mainDashboard.html )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
