@@ -3,9 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 #= require_self
 #= require_tree ./services
-#= require_tree ./filters
 #= require_tree ./controllers
-#= require_tree ./directives
+
 
 ControlPanel = angular.module('ControlPanel', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'angularFileUpload'])
 
@@ -21,11 +20,11 @@ ControlPanel.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/help', {templateUrl: '../assets/templates/mainHelp.html', controller: 'DashboardCtrl' } )
 
   # ADMIN part
-  $routeProvider.when('/adminDashboard', {templateUrl: '../assets/adminDashboard.html' } )
-  $routeProvider.when('/adminUsers', {templateUrl: '../assets/adminUsers.html', controller: 'usersCtrl' } )
-  $routeProvider.when('/adminDevices', {templateUrl: '../assets/adminDevices.html' } )
-  $routeProvider.when('/adminPlaylists', {templateUrl: '../assets/adminPlaylists.html' } )
-  $routeProvider.when('/adminInvoices', {templateUrl: '../assets/adminInvoices.html' } )
+  $routeProvider.when('/adminDashboard', {templateUrl: '../assets/templates/adminDashboard.html' } )
+  $routeProvider.when('/adminUsers', {templateUrl: '../assets/templates/adminUsers.html', controller: 'usersCtrl' } )
+  $routeProvider.when('/adminDevices', {templateUrl: '../assets/templates/adminDevices.html' } )
+  $routeProvider.when('/adminPlaylists', {templateUrl: '../assets/templates/adminPlaylists.html' } )
+  $routeProvider.when('/adminInvoices', {templateUrl: '../assets/templates/adminInvoices.html' } )
 
   # DEFAULT page
   $routeProvider.otherwise({ templateUrl: '../assets/templates/mainDashboard.html', controller: 'DashboardCtrl'} )

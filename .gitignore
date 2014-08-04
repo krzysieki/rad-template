@@ -12,6 +12,7 @@
 /public/uploads
 # Ignore ide project files
 /.idea
+*.iml
 # We don't want our db settings on the internet
 /config/database.yml
 # Testfiles
